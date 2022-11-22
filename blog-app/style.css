@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css??family-Nunito+Sans:wght@200&display-swap');
+:root {
+    --font-style: 'Nutino Sans' . sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+body {
+    background: #131315;
+    font-family: var(--font-style);
+}
+.card-body {
+    top: 50%;
+    left: 550%;
+    background: #242026;
+    box-shadow: 0 15px 25pc rgba(143, 124, 236, 0, 7);
+    border-radius: 10px;
+}
+.card-body h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+}
+.card-body .mb-3 input {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.card-body .mb-3 label {
+    left: 0;
+    top: -60px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+#gönderbutonu {
+    padding: 10px 20px;
+    color: #CBBDDB;
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    border: 1px solid #8F7CEC;
+    margin: auto;
+}
+.list-group-item {
+    background: #000;
+    text-decoration: none;
+    overflow: hidden;
+}
+.linkler {
+    text-decoration: none;
+    color: rgb(210, 104, 21);
+}
+.wrapper {
+    text-align: center;
+}
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+.mb-4{
+    color: #fff;
+}
+.mb-3{
+    background: #242026;
+    color: #fff;
+}
