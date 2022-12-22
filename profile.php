@@ -3,6 +3,10 @@
 require "libs/vars.php";
 require "libs/functions.php";
 
+if(!isLoggedIn()){
+    header("Location: login.php");
+    die();
+}
 ?>
 
 <!DOCTYPE html>
@@ -13,19 +17,18 @@ require "libs/functions.php";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Ana Sayfa | Blog App</title>
+    <title>Kullanıcı Sayfası | Blog App</title>
 </head>
 <body>
 <?php include "views/_navbar.php"; ?>
 
 <div class="container my-5">
     <div class="row">
-        <div class="col-3">
-            <?php include "views/_menu.php"; ?>
-        </div>
         <div class="col-9">
-            <?php include "views/_title.php"; ?>
-            <?php include "filters-blog.php"; ?>
+            <h3>Hoşgeldiniz, <?php echo $_SESSION["username"] ?></h3>
+            <div>
+                <a href="logout.php" class="btn btn-danger">Çıkış Yap</a>
+            </div>
         </div>
     </div>
 </div>

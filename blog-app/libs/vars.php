@@ -1,7 +1,6 @@
 <?php
 
     session_start();
-    const baslik = "Popüler Filmler";
 
     const user = array(
         "username" => "Bedirhan",

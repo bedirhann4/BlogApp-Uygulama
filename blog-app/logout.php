@@ -1,5 +1,7 @@
 <?php  
-    setcookie("auth[kullaniciadi]", "", time()-3600);
-    setcookie("auth[name]", "", time()-3600);
+    session_start();
+    $_SESSION = array();
+    session_destroy();
     header("Location: login.php");
+    die();
 ?>
